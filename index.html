@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>TLPM</h2>
+            <p>Products Managment System</p>
+        </div>
+        <div class="inputs">
+            <input type="text" name="" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="getTotale()" type="number" name="" id="price" placeholder="price">
+                <input onkeyup="getTotale()" type="number" name="taxes" id="tax" placeholder="taxes">
+
+                <input onkeyup="getTotale()" type="number" name="" id="ads" placeholder="ads">
+                <input onkeyup="getTotale()" type="number" name="" id="discount" placeholder="discount">
+                <small onkeyup="getTotale()" id="totale"></small>
+
+            </div>
+            <input type="number" name="" id="count" placeholder="count">
+            <input type="text" name="" id="categpory" placeholder="category">
+            <button id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="search">
+                <input  onkeyup="searchData(this.value)" name="" id="searching" placeholder="Search">
+                <div class="search-by">
+                    <button id="byTitle" onclick="getSearchMode(this.id)" >Search By Title</button>
+                    <button id="byCategory" onclick="getSearchMode(this.id)">Search By Category</button>
+                </div>
+            </div>
+            <div id="deletAll">
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>Total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- comment a scope shif+alt+a   do the same thing at  the same time in defference ligen¨ctrl +alt -->
+    <script src="scripte.js">
+    </script>
+</body>
+
+</html>
